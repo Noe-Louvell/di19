@@ -1,7 +1,11 @@
 <?php
 namespace src\Model;
 
+<<<<<<< HEAD
 class Article extends Contenu implements \JsonSerializable {
+=======
+class Article extends Contenu {
+>>>>>>> push tout ça
     private $Auteur;
     private $DateAjout;
     private $ImageRepository;
@@ -33,6 +37,7 @@ class Article extends Contenu implements \JsonSerializable {
 
     }
 
+<<<<<<< HEAD
     public function SqlGetAll(\PDO $bdd){
             $requete = $bdd->prepare('SELECT * FROM articles');
             $requete->execute();
@@ -150,6 +155,8 @@ class Article extends Contenu implements \JsonSerializable {
     }
 
 
+=======
+>>>>>>> push tout ça
     /**
      * @return mixed
      */
@@ -223,4 +230,8 @@ class Article extends Contenu implements \JsonSerializable {
     }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> push tout ça
 }
