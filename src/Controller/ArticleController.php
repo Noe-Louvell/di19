@@ -138,7 +138,7 @@ class ArticleController extends AbstractController {
                 ->setAuteur($arrayAuteur[0]);
             $article->SqlAdd(BDD::getInstance());
         }
-        //header('Location:/Article');
+        header('Location:/Article');
     }
 
 
