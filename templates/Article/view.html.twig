@@ -12,7 +12,7 @@
                 {% if article.ImageFileName != '' and    file_exist('./uploads/images/'~article.ImageRepository~'/'~article.ImageFileName) %}
                     <img class='card-img-top' alt='Article' src='/uploads/images/{{ article.ImageRepository }}/{{article.ImageFileName}}'/>
                 {% else %}
-                    <h6 class="display-4">Pas d'image</h6>
+                    <h6 class="display-4">Pas d'mage</h6>
                 {% endif %}
 
                 <div class="card-body">
