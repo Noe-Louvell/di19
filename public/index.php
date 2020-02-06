@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 session_start();
 require '../vendor/autoload.php';
 
@@ -50,13 +50,6 @@ echo $router->run();
 
 
 
-=======
-namespace MonNamespace;
 
- function strlen(){
-     return 'coucou';
- }
-echo strlen();
 
- echo \strlen('Fonction PHP');
->>>>>>> push tout ça
+

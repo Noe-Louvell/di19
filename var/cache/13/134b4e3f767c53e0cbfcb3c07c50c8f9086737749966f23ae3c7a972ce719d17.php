@@ -74,7 +74,7 @@ class __TwigTemplate_aef41abe759227a9d9f69dadcbbe8ea054776b489e402ec8a20022d1b39
             <input type=\"submit\">
         </form>
         <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"/Register\">Création de compte</a>
+            <a class=\"nav-link\" href=\"/Register\">Créer un compte</a>
         </li>
     </div>
 
@@ -112,7 +112,7 @@ class __TwigTemplate_aef41abe759227a9d9f69dadcbbe8ea054776b489e402ec8a20022d1b39
             <input type=\"submit\">
         </form>
         <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"/Register\">Création de compte</a>
+            <a class=\"nav-link\" href=\"/Register\">Créer un compte</a>
         </li>
     </div>
 
