@@ -74,13 +74,16 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
                 <a class=\"nav-link\" href=\"/Logout\">Log Out</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Article/ListAll\">Liste des articles</a>
+                <a class=\"nav-link\" href=\"/Article/ListAllArticle\">Liste des articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Article/Add\">Ajout d'un article</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/User\">Utilisateurs</a>
             </li>
 
 
@@ -89,8 +92,8 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
 
         <form class=\"form-inline\" method=\"post\" action=\"/Article/Show/";
-        // line 45
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "search", [], "any", false, false, false, 45), "html", null, true);
+        // line 48
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "search", [], "any", false, false, false, 48), "html", null, true);
         echo "\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" name=\"search\">
             <input type=\"submit\" class=\"btn btn-outline-success my-2 my-sm-0\" value=\"Rechercher\" name=\"searchSubmit\">
@@ -122,9 +125,9 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
 
     ";
-        // line 75
+        // line 78
         $this->displayBlock('body', $context, $blocks);
-        // line 76
+        // line 79
         echo "
 
 
@@ -135,9 +138,9 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
 <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
 ";
-        // line 85
+        // line 88
         $this->displayBlock('javascript', $context, $blocks);
-        // line 86
+        // line 89
         echo "</body>
 </html>
 ";
@@ -156,13 +159,13 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
         $macros = $this->macros;
     }
 
-    // line 75
+    // line 78
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 85
+    // line 88
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -180,7 +183,7 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
     public function getDebugInfo()
     {
-        return array (  166 => 85,  160 => 75,  154 => 10,  147 => 5,  141 => 86,  139 => 85,  128 => 76,  126 => 75,  93 => 45,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  169 => 88,  163 => 78,  157 => 10,  150 => 5,  144 => 89,  142 => 88,  131 => 79,  129 => 78,  96 => 48,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
     }
 
     public function getSourceContext()
@@ -215,13 +218,16 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
                 <a class=\"nav-link\" href=\"/Logout\">Log Out</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Article/ListAll\">Liste des articles</a>
+                <a class=\"nav-link\" href=\"/Article/ListAllArticle\">Liste des articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Article/Add\">Ajout d'un article</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/User\">Utilisateurs</a>
             </li>
 
 

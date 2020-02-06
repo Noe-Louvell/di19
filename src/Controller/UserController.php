@@ -6,6 +6,17 @@ use src\Model\User;
 
 class UserController extends  AbstractController
 {
+    public function ListAllUser(){
+        $user = new User();
+        $listUser = $user->SqlGetUser(Bdd::GetInstance());
+
+        //Lancer la vue TWIG
+        return $this->twig->render(
+            'User/userlist.html.twig',[
+                'userList' => $listUser
+            ]
+        );
+    }
 
     public function loginForm()
     {
@@ -71,17 +82,15 @@ class UserController extends  AbstractController
 
         header('Location:/');
     }
+
+
     public function registerFrom(){
         return $this->twig->render('User/register.html.twig');
     }
 
-
     public function registerAdd()
     {
-        var_dump($_POST);
-
             $sqlRepository = null;
-
 
             $user = new User();
 
@@ -92,6 +101,33 @@ class UserController extends  AbstractController
             $user->SqlAddUser(BDD::getInstance());
         header('Location:/');
     }
+
+    public function ListValidatorUser(){
+        $user = new User();
+        $listUser = $user->SqlValidatorUser(Bdd::GetInstance());
+
+        //Lancer la vue TWIG
+        return $this->twig->render(
+            'User/ValidationUser.html.twig',[
+                'ListUser' => $listUser
+            ]
+        );
+    }
+
+    public function ValidationUser(){
+        $user = new User();
+        $listUser = $user->SqlGetUser(Bdd::GetInstance());
+
+        //Lancer la vue TWIG
+        return $this->twig->render(
+            'Article/ValidationUser.html.twig',[
+                'ListUser' => $listUser
+            ]
+        );
+    }
+
+
+
 
 }
 

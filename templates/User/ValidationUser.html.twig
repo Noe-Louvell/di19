@@ -1,0 +1,35 @@
+{% extends "index.html.twig" %}
+{% block title %}Validation d'user{% endblock %}
+
+{% block body %}
+
+    <table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">email</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">role</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for user in ListUser %}
+
+        <tr>
+            <th scope="row"><a href="/User/Show/{{ user.id_uti }}">#{{ user.id_uti }}</a></th>
+            <td>{{ user.uti_mail }}</td>
+            <td>{{ user.uti_nom }}</td>
+            <td>{{ user.uti_prenom }}</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a class="btn btn-success" href="/User/Show/{{ user.id_uti }}"><i class="far fa-eye"></i></a>
+                    <a class="btn btn-success" href="/User/Val/{{ user.id_uti }}"><i class="fas fa-check-circle"></i></a>
+                </div>
+            </td>
+        </tr>
+
+    {% endfor %}
+    </tbody>
+
+{% endblock %}

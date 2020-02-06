@@ -8,10 +8,10 @@ use DateTime;
 class ArticleController extends AbstractController {
 
     public function Index(){
-        return $this->ListAll();
+        return $this->ListAllArticle();
     }
 
-    public function ListAll(){
+    public function ListAllArticle(){
         $article = new Article();
         $listArticle = $article->SqlGetAll(Bdd::GetInstance());
 
