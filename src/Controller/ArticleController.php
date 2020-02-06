@@ -190,9 +190,37 @@ class ArticleController extends AbstractController {
         header('location:/Article/');
     }
 
-    public function test($param1,$param2){
-        var_dump($param1);
-        var_dump($param2);
+    public function ListValidator(){
+        $article = new Article();
+        $listArticle = $article->SqlValidator(Bdd::GetInstance());
+
+        //Lancer la vue TWIG
+        return $this->twig->render(
+            'Article/Validation.html.twig',[
+                'articleList' => $listArticle
+            ]
+        );
+    }
+
+    public function Validation(){
+        $article = new Article();
+        $listArticle = $article->SqlGetAll(Bdd::GetInstance());
+
+        //Lancer la vue TWIG
+        return $this->twig->render(
+            'Article/Validation.html.twig',[
+                'articleList' => $listArticle
+            ]
+        );
+    }
+
+    public function Val($articleID){
+        $articleSQL = new Article();
+        $article = $articleSQL->Sqlchange(Bdd::GetInstance(), $articleID);
+
+        header('Location:/Article/Validation');
     }
 
 }
+
+

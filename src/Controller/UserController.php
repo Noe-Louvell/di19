@@ -71,9 +71,14 @@ class UserController extends  AbstractController
 
         header('Location:/');
     }
+    public function registerFrom(){
+        return $this->twig->render('User/register.html.twig');
+    }
 
-    public function register()
+
+    public function registerAdd()
     {
+        var_dump($_POST);
 
             $sqlRepository = null;
 
@@ -85,6 +90,7 @@ class UserController extends  AbstractController
                 ->setUtiPrenom($_POST['uti_prenom'])
                 ->setUtiPassword($_POST['uti_password']);
             $user->SqlAddUser(BDD::getInstance());
+        header('Location:/');
     }
 
 }

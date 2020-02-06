@@ -41,9 +41,13 @@ $router->post('/Contact/sendMail', 'Contact#sendMail');
 $router->get('/Login', 'User#loginForm');
 $router->post('/Login', 'User#loginCheck');
 $router->get('/Logout', 'User#logout');
-$router->get('/Register','User#register');
-$router->post('/Register','User#register');
+$router->get('/Register','User#registerFrom');
+$router->post('/Register','User#registerAdd');
 $router->get('/Article/Show/:id','Article#Show#id');
+
+
+$router->get('/Article/Validation', 'Article#ListValidator');
+$router->get('/Article/Val/:id', 'Article#Val#id');
 
 
 echo $router->run();
