@@ -85,7 +85,7 @@ class __TwigTemplate_9cad3958c6d17711b4a7fdf6b874f1ac6d8100856da14ea6714cef38fc9
             <div class=\"form-group row\">
                 <label for=\"article_auteur\" class=\"col-sm-2 col-form-label\">Auteur</label>
                 <div class=\"col-sm-10\">
-                    <input type=\"text\" name=\"Auteur\" class=\"form-control\">
+                    <input type=\"text\" name=\"Ateur\" class=\"form-control\">
                 </div>
             </div>
 
@@ -161,7 +161,7 @@ class __TwigTemplate_9cad3958c6d17711b4a7fdf6b874f1ac6d8100856da14ea6714cef38fc9
             <div class=\"form-group row\">
                 <label for=\"article_auteur\" class=\"col-sm-2 col-form-label\">Auteur</label>
                 <div class=\"col-sm-10\">
-                    <input type=\"text\" name=\"Auteur\" class=\"form-control\">
+                    <input type=\"text\" name=\"Ateur\" class=\"form-control\">
                 </div>
             </div>
 

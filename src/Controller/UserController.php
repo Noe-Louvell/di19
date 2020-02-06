@@ -16,7 +16,7 @@ class UserController extends  AbstractController
     {
 
         if (!filter_var(
-            $_POST['password'],
+            $_POST['uti_password'],
             FILTER_VALIDATE_REGEXP,
             array(
                 "options" => array("regexp" => "/[a-zA-Z]{3,}/")
@@ -27,19 +27,19 @@ class UserController extends  AbstractController
             return;
         }
 
-        if(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
+        if(!filter_var($_POST['uti_mail'],FILTER_VALIDATE_EMAIL)){
             $_SESSION['errorlogin'] = "Adresse mail invalide.";
             header('Location:/Login');
             return;
         }
 
-        if ($_POST["email"] == "admin@admin.com"
-            AND $_POST["password"] == "password"
+        if ($_POST["uti_mail"] == "admin@admin.com"
+            AND $_POST["uti_password"] == "password"
         ) {
 
             $_SESSION['login'] = array(
-                'Nom' => 'Administrateur'
-            , 'Prénom' => 'Sylvain'
+                'uti_nom' => 'Administrateur'
+            , 'uti_prenom' => 'Sylvain'
             , 'roles' => array('admin', 'redacteur')
             );
             header('Location:/');
@@ -71,20 +71,26 @@ class UserController extends  AbstractController
 
         header('Location:/');
     }
+    public function registerFrom(){
+        return $this->twig->render('User/register.html.twig');
+    }
 
-    public function register()
+
+    public function registerAdd()
     {
+        var_dump($_POST);
 
             $sqlRepository = null;
 
+
             $user = new User();
+
             $user->setUtiMail($_POST['uti_mail'])
                 ->setUtiNom($_POST['uti_nom'])
                 ->setUtiPrenom($_POST['uti_prenom'])
                 ->setUtiPassword($_POST['uti_password']);
             $user->SqlAddUser(BDD::getInstance());
-
-
+        header('Location:/');
     }
 
 }

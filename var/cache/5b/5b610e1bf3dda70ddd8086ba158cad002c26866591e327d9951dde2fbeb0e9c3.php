@@ -48,7 +48,7 @@ class __TwigTemplate_689c7f50df60761a54aae62b6a266c4e29d9a9773eabfaf6e4957acd400
     {
         $macros = $this->macros;
         $this->displayParentBlock("title", $context, $blocks);
-        echo " - Connectez vous ";
+        echo " - Connectez-vous ";
     }
 
     // line 3
@@ -69,14 +69,14 @@ class __TwigTemplate_689c7f50df60761a54aae62b6a266c4e29d9a9773eabfaf6e4957acd400
         }
         // line 9
         echo "        <form method=\"post\" action=\"/Register\">
-            <p>eMail :</p>
-            <input type=\"email\" name=\"email\">
+            <p>Adresse e-mail :</p>
+            <input type=\"email\" name=\"uti_mail\" class=\"form-control form-control-lg\">
             <p>Nom :</p>
-            <input name=\"nom\">
-            <p>Prenom :</p>
-            <input name=\"prenom\">
-            <p>PassWord :</p>
-            <input type=\"password\" name=\"password\">
+            <input name=\"uti_nom\" class=\"form-control form-control-lg\">
+            <p>Prénom :</p>
+            <input name=\"uti_prenom\" class=\"form-control form-control-lg\">
+            <p>Mot de passe :</p>
+            <input type=\"password\" name=\"uti_password\" class=\"form-control form-control-lg\">
             <br>
             <input type=\"submit\">
         </form>
@@ -103,7 +103,7 @@ class __TwigTemplate_689c7f50df60761a54aae62b6a266c4e29d9a9773eabfaf6e4957acd400
     public function getSourceContext()
     {
         return new Source("{% extends \"index.html.twig\" %}
-{% block title %}{{ parent() }} - Connectez vous {% endblock %}
+{% block title %}{{ parent() }} - Connectez-vous {% endblock %}
 {% block body %}
 
     <div class=\"container-fluid mt-2\">
@@ -111,14 +111,14 @@ class __TwigTemplate_689c7f50df60761a54aae62b6a266c4e29d9a9773eabfaf6e4957acd400
             <div class=\"alert alert-danger\">{{ session.errorlogin }}</div>
         {% endif %}
         <form method=\"post\" action=\"/Register\">
-            <p>eMail :</p>
-            <input type=\"email\" name=\"email\">
+            <p>Adresse e-mail :</p>
+            <input type=\"email\" name=\"uti_mail\" class=\"form-control form-control-lg\">
             <p>Nom :</p>
-            <input name=\"nom\">
-            <p>Prenom :</p>
-            <input name=\"prenom\">
-            <p>PassWord :</p>
-            <input type=\"password\" name=\"password\">
+            <input name=\"uti_nom\" class=\"form-control form-control-lg\">
+            <p>Prénom :</p>
+            <input name=\"uti_prenom\" class=\"form-control form-control-lg\">
+            <p>Mot de passe :</p>
+            <input type=\"password\" name=\"uti_password\" class=\"form-control form-control-lg\">
             <br>
             <input type=\"submit\">
         </form>
