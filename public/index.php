@@ -43,6 +43,7 @@ $router->get('/Logout', 'User#logout');
 $router->get('/Register','User#register');
 $router->post('/Register','User#register');
 $router->get('/Article/Show/:id','Article#Show#id');
+$router->get('/Article/Search/:id','Article#Search#id');
 
 
 echo $router->run();

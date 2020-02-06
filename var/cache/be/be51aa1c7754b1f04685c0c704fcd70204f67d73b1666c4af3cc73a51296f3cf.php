@@ -90,12 +90,7 @@ class __TwigTemplate_bb59f8bab20fa3c7dc877cbbd27e5fdf21be6906604f08c815aa528afcd
         echo "</p>
                 </div>
             </div>
-
-
-
         </div>
-
-
     </div>
     </div>
 
@@ -141,12 +136,7 @@ class __TwigTemplate_bb59f8bab20fa3c7dc877cbbd27e5fdf21be6906604f08c815aa528afcd
                     <p class=\"card-text\">{{ article.Description }}</p>
                 </div>
             </div>
-
-
-
         </div>
-
-
     </div>
     </div>
 
