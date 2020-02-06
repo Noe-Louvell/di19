@@ -101,7 +101,7 @@ class ArticleController extends AbstractController {
                 ->setImageFileName($nomImage)
             ;
 
-            $article->SqlUpdate(BDD::getInstance());
+            $article->SqlUpdateArticle(BDD::getInstance());
         }
 
         return $this->twig->render('Article/update.html.twig',[

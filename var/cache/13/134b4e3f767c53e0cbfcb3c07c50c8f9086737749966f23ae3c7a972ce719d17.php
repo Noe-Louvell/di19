@@ -69,8 +69,8 @@ class __TwigTemplate_aef41abe759227a9d9f69dadcbbe8ea054776b489e402ec8a20022d1b39
         }
         // line 9
         echo "        <form method=\"post\" action=\"/Login\">
-            <input type=\"email\" name=\"email\">
-            <input type=\"password\" name=\"password\">
+            <input type=\"email\" name=\"uti_mail\">
+            <input type=\"password\" name=\"uti_password\">
             <input type=\"submit\">
         </form>
         <li class=\"nav-item\">
@@ -107,8 +107,8 @@ class __TwigTemplate_aef41abe759227a9d9f69dadcbbe8ea054776b489e402ec8a20022d1b39
             <div class=\"alert alert-danger\">{{ session.errorlogin }}</div>
         {% endif %}
         <form method=\"post\" action=\"/Login\">
-            <input type=\"email\" name=\"email\">
-            <input type=\"password\" name=\"password\">
+            <input type=\"email\" name=\"uti_mail\">
+            <input type=\"password\" name=\"uti_password\">
             <input type=\"submit\">
         </form>
         <li class=\"nav-item\">

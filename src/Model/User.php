@@ -22,8 +22,8 @@ namespace src\Model;
                 'uti_nom' => $this->getUtiNom(),
                 'uti_prenom' => $this->getUtiPrenom(),
                 'uti_password' => $this->getUtiPassword(),
-                'uti_role' => $this->getUtiRole(),
-                'id_uti' =>$this->getUtiId()
+                'uti_role' => $this->getUtiRole()
+
             ]);
             return array("result"=>true,"message"=>$bdd->lastInsertId());
         }catch (\Exception $e){
@@ -46,7 +46,7 @@ namespace src\Model;
          $article->setUtiPrenom($datas['uti_prenom']);
          $article->setUtiPassword($datas['uti_password']);
          $article->setUtiRole($datas['uti_role']);
-         $article->setUtiId($datas['id_uti']);
+
 
 
          return $article;
@@ -61,7 +61,7 @@ namespace src\Model;
                  ,'uti_nom' => $this->getUtiNom()
                  ,'uti_prenom' => $this->getUtiPrenom()
                  ,'uti_password' => $this->getUtiPassword()
-                 ,'id_uti' => $this->getUtiId($id_uti)
+
              ]);
              return array("0", "[OK] Update");
          }catch (\Exception $e){
@@ -77,7 +77,7 @@ namespace src\Model;
              'uti_prenom' => $this->getUtiPrenom(),
              'uti_password' => $this->getUtiPassword(),
              'uti_role' => $this->getUtiRole(),
-             'id_uti' => $this->getUtiId()
+
          ];
      }
 
@@ -95,6 +95,7 @@ namespace src\Model;
     public function setUtiMail($uti_mail)
     {
         $this->uti_mail = $uti_mail;
+        return $this;
     }
 
     /**
@@ -111,6 +112,7 @@ namespace src\Model;
     public function setUtiNom($uti_nom)
     {
         $this->uti_nom = $uti_nom;
+        return $this;
     }
 
     /**
@@ -127,6 +129,7 @@ namespace src\Model;
     public function setUtiPrenom($uti_prenom)
     {
         $this->uti_prenom = $uti_prenom;
+        return $this;
     }
 
     /**
@@ -143,6 +146,7 @@ namespace src\Model;
     public function setUtiPassword($uti_password)
     {
         $this->uti_password = $uti_password;
+        return $this;
     }
 
     /**
@@ -159,17 +163,7 @@ namespace src\Model;
     public function setUtiRole($uti_role)
     {
         $this->uti_role = $uti_role;
+        return $this;
     }
 
-     public function  getUtiId($id_uti){
-        return $this->id_uti;
-     }
-
-     /**
-      * @param mixed $id_uti
-      */
-     public function setUtiId($id_uti)
-     {
-         $this->id_uti = $id_uti;
-     }
  }
