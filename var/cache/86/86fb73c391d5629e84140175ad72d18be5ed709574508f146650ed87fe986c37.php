@@ -59,7 +59,7 @@ class __TwigTemplate_000903ecc2feaca68c8457524b5d9ab5fc476bb11a9e22b60cf5c4c4eda
 
 <nav class=\"navbar sticky-top nav-pills navbar-expand-lg navbar-dark bg-dark\">
 
-    <a class=\"navbar-brand\" href=\"/Article/ListAll\">Blog du CESI</a>
+    <a class=\"navbar-brand\" href=\"/\">Blog du CESI</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
     </button>
@@ -203,7 +203,7 @@ class __TwigTemplate_000903ecc2feaca68c8457524b5d9ab5fc476bb11a9e22b60cf5c4c4eda
 
 <nav class=\"navbar sticky-top nav-pills navbar-expand-lg navbar-dark bg-dark\">
 
-    <a class=\"navbar-brand\" href=\"/Article/ListAll\">Blog du CESI</a>
+    <a class=\"navbar-brand\" href=\"/\">Blog du CESI</a>
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarTogglerDemo02\" aria-controls=\"navbarTogglerDemo02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
         <span class=\"navbar-toggler-icon\"></span>
     </button>
