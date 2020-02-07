@@ -36,14 +36,14 @@ namespace src\Model;
 
     public function SqlAddUser(\PDO $bdd) {
         try{
-            $requete = $bdd->prepare('INSERT INTO user (uti_mail, uti_nom, uti_prenom, uti_password, uti_role) VALUES(:uti_mail, :uti_nom, :uti_prenom, :uti_password, :uti_role)');
+            $requete = $bdd->prepare('INSERT INTO user (uti_mail, uti_nom, uti_prenom, uti_password) VALUES(:uti_mail, :uti_nom, :uti_prenom, :uti_password)');
             $requete->execute([
 
                 'uti_mail' => $this->getUtiMail(),
                 'uti_nom' => $this->getUtiNom(),
                 'uti_prenom' => $this->getUtiPrenom(),
                 'uti_password' => $this->getUtiPassword(),
-                'uti_role' => $this->getUtiRole()
+
 
             ]);
             return array("result"=>true,"message"=>$bdd->lastInsertId());

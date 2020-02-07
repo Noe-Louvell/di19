@@ -44,6 +44,10 @@ $router->get('/Register','User#registerFrom');
 $router->post('/Register','User#registerAdd');
 $router->get('/Article/Show/:id','Article#Show#id');
 $router->get('/Article/Search/:id','Article#Search#id');
+<<<<<<< HEAD
+=======
+$router->post('/Article/Show/', 'Article#Search');
+>>>>>>> c1f1e972db1ff3259ff9e37fe20cbc3747670e66
 
 $router->get('/Article/Validation', 'Article#ListValidator');
 $router->get('/Article/Val/:id', 'Article#Val#id');
