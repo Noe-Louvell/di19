@@ -63,14 +63,14 @@ class __TwigTemplate_69a5b316b9cd817e58484992de144970b2e8202b8a92320721eb618ceca
         <th scope=\"col\">email</th>
         <th scope=\"col\">Nom</th>
         <th scope=\"col\">Prenom</th>
-        <th scope=\"col\">role</th>
+        <th scope=\"col\">Rôle</th>
     </tr>
     </thead>
     <tbody>
     ";
         // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["ListUser"] ?? null));
+        $context['_seq'] = twig_ensure_traversable(($context["userList"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
             // line 18
             echo "
@@ -93,15 +93,19 @@ class __TwigTemplate_69a5b316b9cd817e58484992de144970b2e8202b8a92320721eb618ceca
             // line 23
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_prenom", [], "any", false, false, false, 23), "html", null, true);
             echo "</td>
+            <td>";
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_role", [], "any", false, false, false, 24), "html", null, true);
+            echo "</td>
             <td>
                 <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
                     <a class=\"btn btn-success\" href=\"/User/Show/";
-            // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 26), "html", null, true);
-            echo "\"><i class=\"far fa-eye\"></i></a>
-                    <a class=\"btn btn-success\" href=\"/User/Val/";
             // line 27
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 27), "html", null, true);
+            echo "\"><i class=\"far fa-eye\"></i></a>
+                    <a class=\"btn btn-success\" href=\"/User/Val/";
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 28), "html", null, true);
             echo "\"><i class=\"fas fa-check-circle\"></i></a>
                 </div>
             </td>
@@ -112,7 +116,7 @@ class __TwigTemplate_69a5b316b9cd817e58484992de144970b2e8202b8a92320721eb618ceca
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 34
         echo "    </tbody>
 
 ";
@@ -130,7 +134,7 @@ class __TwigTemplate_69a5b316b9cd817e58484992de144970b2e8202b8a92320721eb618ceca
 
     public function getDebugInfo()
     {
-        return array (  116 => 33,  104 => 27,  100 => 26,  94 => 23,  90 => 22,  86 => 21,  80 => 20,  76 => 18,  72 => 17,  58 => 5,  54 => 4,  47 => 2,  36 => 1,);
+        return array (  120 => 34,  108 => 28,  104 => 27,  98 => 24,  94 => 23,  90 => 22,  86 => 21,  80 => 20,  76 => 18,  72 => 17,  58 => 5,  54 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -147,17 +151,18 @@ class __TwigTemplate_69a5b316b9cd817e58484992de144970b2e8202b8a92320721eb618ceca
         <th scope=\"col\">email</th>
         <th scope=\"col\">Nom</th>
         <th scope=\"col\">Prenom</th>
-        <th scope=\"col\">role</th>
+        <th scope=\"col\">Rôle</th>
     </tr>
     </thead>
     <tbody>
-    {% for user in ListUser %}
+    {% for user in userList %}
 
         <tr>
             <th scope=\"row\"><a href=\"/User/Show/{{ user.id_uti }}\">#{{ user.id_uti }}</a></th>
             <td>{{ user.uti_mail }}</td>
             <td>{{ user.uti_nom }}</td>
             <td>{{ user.uti_prenom }}</td>
+            <td>{{ user.uti_role }}</td>
             <td>
                 <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
                     <a class=\"btn btn-success\" href=\"/User/Show/{{ user.id_uti }}\"><i class=\"far fa-eye\"></i></a>

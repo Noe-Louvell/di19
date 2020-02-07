@@ -10,21 +10,22 @@
         <th scope="col">email</th>
         <th scope="col">Nom</th>
         <th scope="col">Prenom</th>
-        <th scope="col">role</th>
+        <th scope="col">Rôle</th>
     </tr>
     </thead>
     <tbody>
-    {% for user in UserSQL %}
+    {% for user in userList %}
 
         <tr>
-            <th scope="row"><a href="/User/Show/{{ UserSQL.id_uti }}">#{{ UserSQL.id_uti }}</a></th>
-            <td>{{ UserSQL.uti_mail }}</td>
-            <td>{{ UserSQL.uti_nom }}</td>
-            <td>{{ UserSQL.uti_prenom }}</td>
+            <th scope="row"><a href="/User/Show/{{ user.id_uti }}">#{{ user.id_uti }}</a></th>
+            <td>{{ user.uti_mail }}</td>
+            <td>{{ user.uti_nom }}</td>
+            <td>{{ user.uti_prenom }}</td>
+            <td>{{ user.uti_role }}</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a class="btn btn-success" href="/User/Show/{{ UserSQL.id_uti }}"><i class="far fa-eye"></i></a>
-                    <a class="btn btn-success" href="/User/Val/{{ UserSQL.id_uti }}"><i class="fas fa-check-circle"></i></a>
+                    <a class="btn btn-success" href="/User/Show/{{ user.id_uti }}"><i class="far fa-eye"></i></a>
+                    <a class="btn btn-success" href="/User/Val/{{ user.id_uti }}"><i class="fas fa-check-circle"></i></a>
                 </div>
             </td>
         </tr>

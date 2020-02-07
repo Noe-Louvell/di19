@@ -15,22 +15,24 @@
                 <th scope="col">Nom</th>
                 <th scope="col">Prenom</th>
                 <th scope="col">Rôle</th>
+                <th scope="col">Action</th>
             </tr>
             </thead>
             <tbody>
-            {% for user in listUser %}
+            {% for user in userList %}
                 <tr>
                     <th scope="row"><a href="/User/Show/{{ user.id_uti }}">#{{ user.id_uti }}</a></th>
                     <td>{{ user.uti_mail }}</td>
                     <td>{{ user.uti_nom }}</td>
                     <td>{{ user.uti_prenom }}</td>
+                    <td>{{ user.uti_role }}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <a class="btn btn-success" href="/User/Show/{{ user.id_uti }}"><i class="far fa-eye"></i></a>
                             <a class="btn btn-warning" href="/User/Update/{{ user.id_uti }}"><i class="fas fa-edit"></i></a>
                             <a class="btn btn-danger" href="/User/Delete/{{ user.id_uti }}"><i class="far fa-trash-alt"></i></a>
                         </div>
-                        <a class="btn btn-secondary" href="/User/WriteOne/{{ user.id_uti }}"><i class="fas fa-file-download"></i></a>
+
 
                     </td>
                 </tr>

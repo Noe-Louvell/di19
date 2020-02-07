@@ -69,53 +69,55 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
                 <th scope=\"col\">Nom</th>
                 <th scope=\"col\">Prenom</th>
                 <th scope=\"col\">Rôle</th>
+                <th scope=\"col\">Action</th>
             </tr>
             </thead>
             <tbody>
             ";
-        // line 21
+        // line 22
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(($context["listUser"] ?? null));
+        $context['_seq'] = twig_ensure_traversable(($context["userList"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 22
+            // line 23
             echo "                <tr>
                     <th scope=\"row\"><a href=\"/User/Show/";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 23), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 24), "html", null, true);
             echo "\">#";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 23), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 24), "html", null, true);
             echo "</a></th>
                     <td>";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_mail", [], "any", false, false, false, 24), "html", null, true);
-            echo "</td>
-                    <td>";
             // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_nom", [], "any", false, false, false, 25), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_mail", [], "any", false, false, false, 25), "html", null, true);
             echo "</td>
                     <td>";
             // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_prenom", [], "any", false, false, false, 26), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_nom", [], "any", false, false, false, 26), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_prenom", [], "any", false, false, false, 27), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_role", [], "any", false, false, false, 28), "html", null, true);
             echo "</td>
                     <td>
                         <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
                             <a class=\"btn btn-success\" href=\"/User/Show/";
-            // line 29
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 29), "html", null, true);
-            echo "\"><i class=\"far fa-eye\"></i></a>
-                            <a class=\"btn btn-warning\" href=\"/User/Update/";
-            // line 30
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 30), "html", null, true);
-            echo "\"><i class=\"fas fa-edit\"></i></a>
-                            <a class=\"btn btn-danger\" href=\"/User/Delete/";
             // line 31
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 31), "html", null, true);
-            echo "\"><i class=\"far fa-trash-alt\"></i></a>
-                        </div>
-                        <a class=\"btn btn-secondary\" href=\"/User/WriteOne/";
+            echo "\"><i class=\"far fa-eye\"></i></a>
+                            <a class=\"btn btn-warning\" href=\"/User/Update/";
+            // line 32
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 32), "html", null, true);
+            echo "\"><i class=\"fas fa-edit\"></i></a>
+                            <a class=\"btn btn-danger\" href=\"/User/Delete/";
             // line 33
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 33), "html", null, true);
-            echo "\"><i class=\"fas fa-file-download\"></i></a>
+            echo "\"><i class=\"far fa-trash-alt\"></i></a>
+                        </div>
+
 
                     </td>
                 </tr>
@@ -124,7 +126,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 40
         echo "
             </tbody>
         </table>
@@ -146,7 +148,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
 
     public function getDebugInfo()
     {
-        return array (  128 => 38,  117 => 33,  112 => 31,  108 => 30,  104 => 29,  98 => 26,  94 => 25,  90 => 24,  84 => 23,  81 => 22,  77 => 21,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  130 => 40,  117 => 33,  113 => 32,  109 => 31,  103 => 28,  99 => 27,  95 => 26,  91 => 25,  85 => 24,  82 => 23,  78 => 22,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -168,22 +170,24 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
                 <th scope=\"col\">Nom</th>
                 <th scope=\"col\">Prenom</th>
                 <th scope=\"col\">Rôle</th>
+                <th scope=\"col\">Action</th>
             </tr>
             </thead>
             <tbody>
-            {% for user in listUser %}
+            {% for user in userList %}
                 <tr>
                     <th scope=\"row\"><a href=\"/User/Show/{{ user.id_uti }}\">#{{ user.id_uti }}</a></th>
                     <td>{{ user.uti_mail }}</td>
                     <td>{{ user.uti_nom }}</td>
                     <td>{{ user.uti_prenom }}</td>
+                    <td>{{ user.uti_role }}</td>
                     <td>
                         <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
                             <a class=\"btn btn-success\" href=\"/User/Show/{{ user.id_uti }}\"><i class=\"far fa-eye\"></i></a>
                             <a class=\"btn btn-warning\" href=\"/User/Update/{{ user.id_uti }}\"><i class=\"fas fa-edit\"></i></a>
                             <a class=\"btn btn-danger\" href=\"/User/Delete/{{ user.id_uti }}\"><i class=\"far fa-trash-alt\"></i></a>
                         </div>
-                        <a class=\"btn btn-secondary\" href=\"/User/WriteOne/{{ user.id_uti }}\"><i class=\"fas fa-file-download\"></i></a>
+
 
                     </td>
                 </tr>
