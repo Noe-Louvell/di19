@@ -1,15 +1,8 @@
 <?php
-<<<<<<< HEAD
 $hostname="mysql-louvel.alwaysdata.net";
 $username="louvel";
 $password="Vuxec654";
 $dbname="louvel_php";
-=======
-$hostname="localhost";
-$username="root";
-$password="";
-$dbname="cesiblog";
->>>>>>> push tout ça
 
 try
 {
