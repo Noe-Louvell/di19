@@ -44,6 +44,7 @@ $router->get('/Logout', 'User#logout');
 $router->get('/Register','User#registerFrom');
 $router->post('/Register','User#registerAdd');
 $router->get('/Article/Show/:id','Article#Show#id');
+$router->get('/Article/Search/:id','Article#Search#id');
 
 
 $router->get('/Article/Validation', 'Article#ListValidator');
