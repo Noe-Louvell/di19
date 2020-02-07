@@ -22,11 +22,13 @@ namespace src\Model;
          $listUser = [];
          foreach ($arrayUser as $UserSQL){
              $user = new User();
+             $user->setIdUti($UserSQL['id_uti']);
              $user->setUtiMail($UserSQL['uti_mail']);
              $user->setUtiNom($UserSQL['uti_nom']);
              $user->setUtiPrenom($UserSQL['uti_prenom']);
              $user->setUtiPassword($UserSQL['uti_password']);
              $user->setUtiRole($UserSQL['uti_role']);
+
              $listUser[] = $user;
          }
          return $listUser;
@@ -88,11 +90,13 @@ namespace src\Model;
          $listUser = [];
          foreach ($arrayUser as $UserSQL){
              $user = new User();
+             $user->setIdUti($UserSQL['id_uti']);
              $user->setUtiMail($UserSQL['uti_mail']);
              $user->setUtiNom($UserSQL['uti_nom']);
              $user->setUtiPrenom($UserSQL['uti_prenom']);
              $user->setUtiPassword($UserSQL['uti_password']);
              $user->setUtiRole($UserSQL['uti_role']);
+
              $listUser[] = $user;
          }
          return $listUser;
@@ -105,13 +109,41 @@ namespace src\Model;
      }
      public function SqlValiderUser(\PDO $bdd,$idUser) {
          try{
-             $requete = $bdd->prepare('INSERT INTO user (uti_role) VALUES(2) where id_uti = $idUser');
+             $requete = $bdd->prepare('INSERT INTO user (uti_role) VALUES(2) where idUser = idUser.User');
              $requete->execute();
              return array("result"=>true,"message"=>$bdd->lastInsertId());
          }catch (\Exception $e){
              return array("result"=>false,"message"=>$e->getMessage());
          }
      }
+     public function SqlGet(\PDO $bdd,$idUser){
+         $requete = $bdd->prepare('SELECT * FROM user where id_uti = :$idUser');
+         $requete->execute([
+             'idUser' => $idUser
+         ]);
+
+         $datas =  $requete->fetch();
+
+             $user = new User();
+             $user->setIdUti($datas['id_uti']);
+             $user->setUtiMail($datas['uti_mail']);
+             $user->setUtiNom($datas['uti_nom']);
+             $user->setUtiPrenom($datas['uti_prenom']);
+             $user->setUtiPassword($datas['uti_password']);
+             $user->setUtiRole($datas['uti_role']);
+
+             return $user;
+     }
+     public function Sqlchange($bdd,$idUser){
+         $requete = $bdd->prepare('update user set uti_role = 2 where id_uti=:idUser');
+         $requete->execute([
+             'idUser' => $idUser
+         ]);
+     }
+
+
+
+
 
     /**
      * @return mixed
@@ -197,5 +229,22 @@ namespace src\Model;
         $this->uti_role = $uti_role;
         return $this;
     }
+
+     /**
+      * @return mixed
+      */
+     public function getIdUti()
+     {
+         return $this->id_uti;
+     }
+
+     /**
+      * @param mixed $id_uti
+      */
+     public function setIdUti($id_uti)
+     {
+         $this->id_uti = $id_uti;
+         return $this;
+     }
 
  }

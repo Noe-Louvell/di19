@@ -130,7 +130,7 @@ class UserController extends  AbstractController
         //Lancer la vue TWIG
         return $this->twig->render(
             'User/ValidationUser.html.twig',[
-                'ListUser' => $listUser
+                'listUser' => $listUser
             ]
         );
     }
@@ -149,7 +149,7 @@ class UserController extends  AbstractController
         $userSQL = new User();
         $user = $userSQL->Sqlchange(Bdd::GetInstance(), $idUser);
 
-        header('Location:/User/Validation');
+        header('Location:/User/ValidationUser');
     }
 
 
