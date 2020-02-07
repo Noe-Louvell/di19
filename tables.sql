@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- phpMyAdmin SQL Dump
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
@@ -34,8 +33,6 @@ drop table if exists user;
 --
 -- Structure de la table `articles`
 --
-=======
->>>>>>> sql
 create table articles
 (
     Id              bigint auto_increment
@@ -46,7 +43,6 @@ create table articles
     Auteur          varchar(50)  null,
     ImageRepository varchar(50)  null,
     ImageFileName   varchar(255) null
-<<<<<<< HEAD
 );
 
 
@@ -114,6 +110,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-=======
-);
->>>>>>> sql
