@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfa3202-f336-4b11-a05f-ec55d7aaf6f4" name="Default Changelist" comment="zebi">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +92,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -142,6 +144,7 @@
       <workItem from="1580999579836" duration="1939000" />
       <workItem from="1581076974903" duration="325000" />
       <workItem from="1581077313913" duration="1483000" />
+      <workItem from="1581079171606" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="ghj">
       <created>1581000720945</created>
@@ -190,6 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1581001026835" />
+    <state x="233" y="20" key="#SQL_Dialects" timestamp="1581079673682">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="20" key="#SQL_Dialects/0.0.1280.720@0.0.1280.720" timestamp="1581079673682" />
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581077115534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

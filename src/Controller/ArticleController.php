@@ -65,6 +65,18 @@ class ArticleController extends AbstractController {
         }
     }
 
+    public function Search(){
+        $article = new Article();
+
+        $searchmot= strip_tags($_POST['search']);
+        $listArticle = $article->SqlSearch(Bdd::GetInstance(),$searchmot);
+
+        return $this->twig->render('Article/list.html.twig',[
+                'articleList' => $listArticle
+            ]
+        );
+    }
+
     public function update($articleID){
         $articleSQL = new Article();
         $article = $articleSQL->SqlGet(BDD::getInstance(),$articleID);
