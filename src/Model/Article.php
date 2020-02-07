@@ -79,7 +79,7 @@ class Article extends Contenu implements \JsonSerializable {
     }
 
     public function SqlSearch(\PDO $bdd,$searchmot){
-        $requete = $bdd->prepare('SELECT * FROM articles where Etat=2 and Titre LIKE :search');
+        $requete = $bdd->prepare('SELECT * FROM articles where /*Etat=2 and*/ Titre LIKE :search');
         $requete->execute(
             ['search'=> "%".$searchmot."%"]
         );
