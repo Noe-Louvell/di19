@@ -48,7 +48,16 @@ class UserController extends  AbstractController
             header('Location:/Login');
         }
 
-
+        $options = [
+            'salt' => md5(strtolower($_POST['email'])),
+            'cost' => 12 // the default cost is 10
+        ];
+        define('PEPPER', sha1(strtolower($_POST['email'])));
+        $pwd_hashed_entry = password_hash(($_POST['password']) . PEPPER, PASSWORD_DEFAULT, $options);
+        $user = new User();
+        $userInfoLog = $user->SqlGetLogin(Bdd::GetInstance(), ($_POST['email']));
+        $pwd_hashed_bdd = $userInfoLog['uti_password'];
+        if ($pwd_hashed_entry == $pwd_hashed_bdd);
     }
 
     public static function roleNeed($roleATester)

@@ -49,6 +49,7 @@ $router->get('/Article/Search/:id','Article#Search#id');
 
 $router->get('/Article/Validation', 'Article#ListValidator');
 $router->get('/Article/Val/:id', 'Article#Val#id');
+$router->get('/Catergory/Val/:id', 'Category#Val#id');
 
 
 echo $router->run();
