@@ -103,9 +103,9 @@ namespace src\Model;
              'idUser' => $idUser
          ]);
      }
-     public function SqlValiderUser(\PDO $bdd) {
+     public function SqlValiderUser(\PDO $bdd,$idUser) {
          try{
-             $requete = $bdd->prepare('INSERT INTO user (uti_role) VALUES(2) where id_uti = id_uti.User');
+             $requete = $bdd->prepare('INSERT INTO user (uti_role) VALUES(2) where id_uti = $idUser');
              $requete->execute();
              return array("result"=>true,"message"=>$bdd->lastInsertId());
          }catch (\Exception $e){

@@ -58,7 +58,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
         // line 5
         echo "
     <div class=\"jumbotron\">
-        <h1 class=\"display-4\">Liste des articles</h1>
+        <h1 class=\"display-4\">Liste des Users</h1>
     </div>
     <div class=\"container\">
         <table class=\"table table-striped\">
@@ -157,7 +157,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
 {% block body %}
 
     <div class=\"jumbotron\">
-        <h1 class=\"display-4\">Liste des articles</h1>
+        <h1 class=\"display-4\">Liste des Users</h1>
     </div>
     <div class=\"container\">
         <table class=\"table table-striped\">

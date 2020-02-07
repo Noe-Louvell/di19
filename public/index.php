@@ -53,6 +53,7 @@ $router->get('/Article/Val/:id', 'Article#Val#id');
 $router->get('/User/ValidationUser', 'User#ListValidatorUser');
 $router->get('/User/Val/:id_uti', 'Article#Val#id_uti');
 $router->get('/User', "User#ListAllUser");
+$router->get('/User/Show', "User#Show");
 $router->get('/Api/User', "Api#UserGet");
 
 echo $router->run();

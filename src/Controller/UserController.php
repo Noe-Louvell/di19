@@ -120,10 +120,27 @@ class UserController extends  AbstractController
 
         //Lancer la vue TWIG
         return $this->twig->render(
-            'Article/ValidationUser.html.twig',[
+            'User/ValidationUser.html.twig',[
                 'ListUser' => $listUser
             ]
         );
+    }
+
+    public function Show($idUser){
+        // affiche un article seul
+        $userSQL = new User();
+        $user = $userSQL->SqlGet(BDD::getInstance(),$idUser);
+
+        return $this->twig->render('User/view.html.twig',[
+            'user' => $user
+        ]);
+    }
+
+    public function Val($idUser){
+        $userSQL = new User();
+        $user = $userSQL->Sqlchange(Bdd::GetInstance(), $idUser);
+
+        header('Location:/User/Validation');
     }
 
 
