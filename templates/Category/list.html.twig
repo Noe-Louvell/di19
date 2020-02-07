@@ -20,14 +20,13 @@
         <tbody>
         {% for category in categoryList %}
             <tr>
-                <th scope="row"><a href="/Article/Show/{{ article.id }}">#{{ article.id }}</a></th>
-                <td>{{ category.cat_libelle }}</td>
-                <td>{{ category.cat_nom }}</td>
+                <th scope="row"><a href="/Article/Show/{{ category.IdCat }}">#{{ category.IdCat }}</a></th>
+                <td>{{ category.CatNom }}</td>
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <a class="btn btn-success" href="/Article/Show/{{ article.id }}"><i class="far fa-eye"></i></a>
-                        <a class="btn btn-warning" href="/Article/Update/{{ article.id }}"><i class="fas fa-edit"></i></a>
-                        <a class="btn btn-danger" href="/Article/Delete/{{ article.id }}"><i class="far fa-trash-alt"></i></a>
+                        <a class="btn btn-success" href="/Cat/Show/{{ category.IdCat }}"><i class="far fa-eye"></i></a>
+                        <a class="btn btn-warning" href="/Cat/Update/{{ category.IdCat }}"><i class="fas fa-edit"></i></a>
+                        <a class="btn btn-danger" href="/Cat/Delete/{{ category.IdCat }}"><i class="far fa-trash-alt"></i></a>
                     </div>
 
 

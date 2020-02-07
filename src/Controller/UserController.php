@@ -44,14 +44,14 @@ class UserController extends  AbstractController
             return;
         }
 
-        if ($_POST["uti_mail"] == "admin@admin.com"
+        if ($_POST["uti_mail"] == ['uti_mail']
             AND $_POST["uti_password"] == "password"
         ) {
 
             $_SESSION['login'] = array(
                 'uti_nom' => 'Administrateur'
             , 'uti_prenom' => 'Sylvain'
-            , 'roles' => array('admin', 'redacteur')
+            , 'roles' => array(2, 3)
             );
             header('Location:/');
         }else{
@@ -125,7 +125,7 @@ class UserController extends  AbstractController
         );
     }
 
-    public function Show($idUser){
+    public function ShowUser($idUser){
         // affiche un article seul
         $userSQL = new User();
         $user = $userSQL->SqlGet(BDD::getInstance(),$idUser);
@@ -139,7 +139,7 @@ class UserController extends  AbstractController
         $userSQL = new User();
         $user = $userSQL->Sqlchange(Bdd::GetInstance(), $idUser);
 
-        header('Location:/User/ValidationUser');
+        header('Location:/User');
     }
 
 

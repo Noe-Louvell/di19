@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 
 drop table if exists articles;
 
-drop table if exists categorie;
+drop table if exists category;
 
 drop table if exists user;
 
@@ -78,7 +78,7 @@ ALTER TABLE `articles`
 --
 -- Index pour la table `categorie`
 --
-ALTER TABLE `categorie`
+ALTER TABLE category
     ADD PRIMARY KEY (`id_cat`);
 
 --
@@ -97,7 +97,7 @@ ALTER TABLE `articles`
 --
 -- AUTO_INCREMENT pour la table `categorie`
 --
-ALTER TABLE `categorie`
+ALTER TABLE category
     MODIFY `id_cat` int(11) NOT NULL AUTO_INCREMENT;
 
 --

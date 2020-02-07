@@ -1,22 +1,35 @@
 {% extends "index.html.twig" %}
-{% block title %}{{ parent() }} - Mise à jour d'un user {% endblock %}
-
+{% block title %} Liste des User - {{ parent() }}{% endblock %}
 
 {% block body %}
-    <div class="container-fluid mt-2">
-        <h2 class="display-3">Voir l'user</h2>
-        <hr class="my-4">
-        <div class="row">
-            <div class="card col-lg-4 ml" style="width: 15rem;">
 
+    <div class="jumbotron">
+        <h1 class="display-4">Liste des Users</h1>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prenom</th>
+                <th scope="col">Rôle</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
 
-                <div class="card-body">
-                    <h5 class="card-title">{{ user.utimail }}</h5>
-                    <p class="card-text">{{ user.utinom }}</p>
-                </div>
-            </div>
-        </div>
+            <tbody>
+
+                    <th scope="row"><a href="/User/Show/{{ user.IdUti }}">#{{ user.IdUti }}</a></th>
+                    <td>{{ user.utimail }}</td>
+                    <td>{{ user.utinom }}</td>
+                    <td>{{ user.utiprenom }}</td>
+                    <td>{{ user.utirole }}</td>
+
+            </tbody>
+        </table>
     </div>
-    </div>
+
 
 {% endblock %}

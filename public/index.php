@@ -53,7 +53,14 @@ $router->get('/User/ValidationUser', 'User#ListValidatorUser');
 $router->get('/User/Val/:id_uti', 'User#Val#id_uti');
 
 $router->get('/User', "User#ListAllUser");
-$router->get('/User/Show', "User#Show");
+$router->get('/User/Show/:id_uti', "User#ShowUser#id_uti");
 $router->get('/Api/User', "Api#UserGet");
+
+$router->get('/Cat/List',"Category#listAll");
+$router->post('/Cat/Update/:id_cat',"Category#update#:id_cat");
+$router->get('/Cat/Update/:id_cat',"Category#update#:id_cat");
+$router->get('/Cat/Delete/:id_cat',"Category#Delete#:id_cat");
+$router->get('/Cat/Add',"Category#Add");
+$router->post('/Cat/Add',"Category#Add");
 
 echo $router->run();
