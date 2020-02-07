@@ -70,13 +70,13 @@ class __TwigTemplate_caaa70fe08947d6ccc5c9c7bf97d987fe4c6d48e7f6c275e40f98bcb3bd
         // line 9
         echo "        <form method=\"post\" action=\"/Register\">
             <p>Adresse e-mail :</p>
-            <input type=\"email\" name=\"email\">
+            <input type=\"email\" name=\"uti_mail\" class=\"form-control form-control-lg\">
             <p>Nom :</p>
-            <input name=\"nom\">
+            <input name=\"uti_nom\" class=\"form-control form-control-lg\">
             <p>Prénom :</p>
-            <input name=\"prenom\">
+            <input name=\"uti_prenom\" class=\"form-control form-control-lg\">
             <p>Mot de passe :</p>
-            <input type=\"password\" name=\"password\">
+            <input type=\"password\" name=\"uti_password\" class=\"form-control form-control-lg\">
             <br>
             <input type=\"submit\">
         </form>
@@ -112,13 +112,13 @@ class __TwigTemplate_caaa70fe08947d6ccc5c9c7bf97d987fe4c6d48e7f6c275e40f98bcb3bd
         {% endif %}
         <form method=\"post\" action=\"/Register\">
             <p>Adresse e-mail :</p>
-            <input type=\"email\" name=\"email\">
+            <input type=\"email\" name=\"uti_mail\" class=\"form-control form-control-lg\">
             <p>Nom :</p>
-            <input name=\"nom\">
+            <input name=\"uti_nom\" class=\"form-control form-control-lg\">
             <p>Prénom :</p>
-            <input name=\"prenom\">
+            <input name=\"uti_prenom\" class=\"form-control form-control-lg\">
             <p>Mot de passe :</p>
-            <input type=\"password\" name=\"password\">
+            <input type=\"password\" name=\"uti_password\" class=\"form-control form-control-lg\">
             <br>
             <input type=\"submit\">
         </form>
