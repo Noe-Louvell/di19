@@ -65,6 +65,12 @@ class ApiController {
         return json_encode($result);
 
     }
+    public function UserGet()
+    {
+        $user = new User();
+        $listUser = $user->SqlGetUser(Bdd::GetInstance());
+        return json_encode($listUser);
+    }
 
 }
 

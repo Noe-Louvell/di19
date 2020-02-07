@@ -1,0 +1,22 @@
+{% extends "index.html.twig" %}
+{% block title %}{{ parent() }} - Mise à jour d'un user {% endblock %}
+
+
+{% block body %}
+    <div class="container-fluid mt-2">
+        <h2 class="display-3">Voir l'user</h2>
+        <hr class="my-4">
+        <div class="row">
+            <div class="card col-lg-4 ml" style="width: 15rem;">
+
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ user.uti_mail }}</h5>
+                    <p class="card-text">{{ user.uti_nom }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

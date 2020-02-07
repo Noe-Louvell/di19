@@ -13,6 +13,25 @@ namespace src\Model;
     private $uti_token;
     private $id_uti;
 
+
+     public function SqlGetUser(\PDO $bdd){
+         $requete = $bdd->prepare('SELECT * FROM user');
+         $requete->execute();
+         $arrayUser = $requete->fetchAll();
+
+         $listUser = [];
+         foreach ($arrayUser as $UserSQL){
+             $user = new User();
+             $user->setUtiMail($UserSQL['uti_mail']);
+             $user->setUtiNom($UserSQL['uti_nom']);
+             $user->setUtiPrenom($UserSQL['uti_prenom']);
+             $user->setUtiPassword($UserSQL['uti_password']);
+             $user->setUtiRole($UserSQL['uti_role']);
+             $listUser[] = $user;
+         }
+         return $listUser;
+     }
+
     public function SqlAddUser(\PDO $bdd) {
         try{
             $requete = $bdd->prepare('INSERT INTO user (uti_mail, uti_nom, uti_prenom, uti_password, uti_role) VALUES(:uti_mail, :uti_nom, :uti_prenom, :uti_password, :uti_role)');
@@ -32,27 +51,7 @@ namespace src\Model;
 
     }
 
-     public function SqlGetUser(\PDO $bdd,$idUser){
-         $requete = $bdd->prepare('SELECT * FROM user where id_uti = :idUser');
-         $requete->execute([
-             'id_uti' => $idUser
-         ]);
 
-         $datas =  $requete->fetch();
-
-         $article = new User();
-         $article->setUtiMail($datas['uti_mail']);
-         $article->setUtiNom($datas['uti_nom']);
-         $article->setUtiPrenom($datas['uti_prenom']);
-         $article->setUtiPassword($datas['uti_password']);
-         $article->setUtiRole($datas['uti_role']);
-
-
-
-         return $article;
-
-
-     }
      public function SqlUpdateUser(\PDO $bdd, $id_uti){
          try{
              $requete = $bdd->prepare('UPDATE user set uti_mail=:uti_mail, uti_nom=:uti_nom, uti_prenom=:uti_prenom, uti_password=:uti_password WHERE id_uti=:IDUSER');
@@ -79,6 +78,39 @@ namespace src\Model;
              'uti_role' => $this->getUtiRole(),
 
          ];
+     }
+
+     public function SqlValidatorUser(\PDO $bdd){
+         $requete = $bdd->prepare('SELECT * FROM user WHERE uti_role = 1');
+         $requete->execute();
+         $arrayUser = $requete->fetchAll();
+
+         $listUser = [];
+         foreach ($arrayUser as $UserSQL){
+             $user = new User();
+             $user->setUtiMail($UserSQL['uti_mail']);
+             $user->setUtiNom($UserSQL['uti_nom']);
+             $user->setUtiPrenom($UserSQL['uti_prenom']);
+             $user->setUtiPassword($UserSQL['uti_password']);
+             $user->setUtiRole($UserSQL['uti_role']);
+             $listUser[] = $user;
+         }
+         return $listUser;
+     }
+     public function SqlchangeUser($bdd,$idUser){
+         $requete = $bdd->prepare('update user set uti_role = 2 where id_uti=:idUser');
+         $requete->execute([
+             'idUser' => $idUser
+         ]);
+     }
+     public function SqlValiderUser(\PDO $bdd,$idUser) {
+         try{
+             $requete = $bdd->prepare('INSERT INTO user (uti_role) VALUES(2) where id_uti = $idUser');
+             $requete->execute();
+             return array("result"=>true,"message"=>$bdd->lastInsertId());
+         }catch (\Exception $e){
+             return array("result"=>false,"message"=>$e->getMessage());
+         }
      }
 
     /**

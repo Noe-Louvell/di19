@@ -17,8 +17,8 @@ function chargerClasse($classe){
 spl_autoload_register('chargerClasse');
 
 $router = new \src\Router\Router($_GET['url']);
-$router->get('/', "Article#ListAll");
-$router->get('/Article', "Article#ListAll");
+$router->get('/', "Article#ListAllArticle");
+$router->get('/Article', "Article#ListAllArticle");
 $router->get('/Article/Update/:id', "Article#Update#id");
 $router->post('/Article/Update/:id', "Article#Update#id");
 $router->get('/Article/Add', "Article#Add");
@@ -31,7 +31,7 @@ $router->get('/Article/WriteOne/:id', "Article#Read#id");
 $router->get('/Api/Article', "Api#ArticleGet");
 $router->post('/Api/Article', "Api#ArticlePost");
 $router->put('/Api/Article/:id/:json', "Api#ArticlePut#id#json");
-$router->get('/Article/ListAll','Article#listAll');
+$router->get('/Article/ListAllArticle','Article#ListAllArticle');
 $router->get('/Api/Article/Last','Api#ArticleGetLast');
 
 
@@ -51,6 +51,12 @@ $router->get('/Article/Validation', 'Article#ListValidator');
 $router->get('/Article/Val/:id', 'Article#Val#id');
 $router->get('/Catergory/Val/:id', 'Category#Val#id');
 
+
+$router->get('/User/ValidationUser', 'User#ListValidatorUser');
+$router->get('/User/Val/:id_uti', 'Article#Val#id_uti');
+$router->get('/User', "User#ListAllUser");
+$router->get('/User/Show', "User#Show");
+$router->get('/Api/User', "Api#UserGet");
 
 echo $router->run();
 

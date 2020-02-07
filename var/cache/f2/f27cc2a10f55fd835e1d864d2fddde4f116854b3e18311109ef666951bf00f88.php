@@ -112,10 +112,7 @@ class __TwigTemplate_e2b6db196dbf5de0c9084af4af92eff3387b85ef1e564b4b297375c21ef
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 31), "html", null, true);
             echo "\"><i class=\"far fa-trash-alt\"></i></a>
                     </div>
-                    <a class=\"btn btn-secondary\" href=\"/Article/WriteOne/";
-            // line 33
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 33), "html", null, true);
-            echo "\"><i class=\"fas fa-file-download\"></i></a>
+
 
                 </td>
             </tr>
@@ -146,7 +143,7 @@ class __TwigTemplate_e2b6db196dbf5de0c9084af4af92eff3387b85ef1e564b4b297375c21ef
 
     public function getDebugInfo()
     {
-        return array (  128 => 38,  117 => 33,  112 => 31,  108 => 30,  104 => 29,  98 => 26,  94 => 25,  90 => 24,  84 => 23,  81 => 22,  77 => 21,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  125 => 38,  112 => 31,  108 => 30,  104 => 29,  98 => 26,  94 => 25,  90 => 24,  84 => 23,  81 => 22,  77 => 21,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -183,7 +180,7 @@ class __TwigTemplate_e2b6db196dbf5de0c9084af4af92eff3387b85ef1e564b4b297375c21ef
                         <a class=\"btn btn-warning\" href=\"/Article/Update/{{ article.id }}\"><i class=\"fas fa-edit\"></i></a>
                         <a class=\"btn btn-danger\" href=\"/Article/Delete/{{ article.id }}\"><i class=\"far fa-trash-alt\"></i></a>
                     </div>
-                    <a class=\"btn btn-secondary\" href=\"/Article/WriteOne/{{ article.id }}\"><i class=\"fas fa-file-download\"></i></a>
+
 
                 </td>
             </tr>

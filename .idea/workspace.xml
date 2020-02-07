@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09199c2f-f864-4b5d-9948-01fb4a0e5918" name="Default Changelist" comment="" />
+    <list default="true" id="0cfa3202-f336-4b11-a05f-ec55d7aaf6f4" name="Default Changelist" comment="zebi">
+      <change afterPath="$PROJECT_DIR$/.idea/tp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Article/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Article/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/User/ValidationUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/User/ValidationUser.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/User/userlist.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/User/userlist.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/0c/0cf3b90a47398afa91fa7b1910c86546e9a7951634cfb83ee283b4f7336a3d5d.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/0c/0cf3b90a47398afa91fa7b1910c86546e9a7951634cfb83ee283b4f7336a3d5d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/86/86fb73c391d5629e84140175ad72d18be5ed709574508f146650ed87fe986c37.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/86/86fb73c391d5629e84140175ad72d18be5ed709574508f146650ed87fe986c37.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/be/be51aa1c7754b1f04685c0c704fcd70204f67d73b1666c4af3cc73a51296f3cf.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/be/be51aa1c7754b1f04685c0c704fcd70204f67d73b1666c4af3cc73a51296f3cf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/f2/f27cc2a10f55fd835e1d864d2fddde4f116854b3e18311109ef666951bf00f88.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f2/f27cc2a10f55fd835e1d864d2fddde4f116854b3e18311109ef666951bf00f88.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,19 +87,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XR8xcRsAN13PM3RO1cfLi1qToI" />
@@ -111,7 +133,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:louvel_php@mysql-louvel.alwaysdata.net" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:louvel_php@mysql-louvel.alwaysdata.net" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@78746143" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -154,21 +186,31 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ghj" />
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/php.xml&#10;#&#9;templates/index.html.twig&#10;#&#9;vendor/autoload.php&#10;#&#9;vendor/composer/autoload_real.php&#10;#&#9;vendor/composer/autoload_static.php" />
+    <MESSAGE value="zebi" />
+    <option name="LAST_COMMIT_MESSAGE" value="zebi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1581001026835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1581001026835" />
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580997894097">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581065034515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580997894097" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1581000885806">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581065034515" />
+    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2" timestamp="1581067414879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581000885806" />
+    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581067414879" />
+    <state x="184" y="92" key="MergeDialog" timestamp="1581067506266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="92" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581067506266" />
+    <state x="672" y="238" key="MultipleFileMergeDialog" timestamp="1581067526161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="238" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581067526161" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1580999851951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -177,10 +219,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581000940293" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581000851969">
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581067538258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581000851969" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581067538258" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580997818581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

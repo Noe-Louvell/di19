@@ -40,22 +40,25 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
         // line 1
         echo "<!doctype html>
 <html lang=\"fr\">
+
 <head>
     <meta charset=\"utf-8\">
     <title>";
-        // line 5
+        // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
-    <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
+    <link rel=\"stylesheet\"
+        href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     ";
-        // line 10
+        // line 12
         $this->displayBlock('css', $context, $blocks);
-        // line 11
+        // line 13
         echo "
 <body>
+
 
 <nav class=\"navbar sticky-top nav-pills navbar-expand-lg navbar-dark bg-dark\">
 
@@ -74,13 +77,16 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
                 <a class=\"nav-link\" href=\"/Logout\">Log Out</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Article/ListAll\">Liste des articles</a>
+                <a class=\"nav-link\" href=\"/Article/ListAllArticle\">Liste des articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Article/Add\">Ajout d'un article</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/User\">Utilisateurs</a>
             </li>
 
 
@@ -89,8 +95,8 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
 
         <form class=\"form-inline\" method=\"post\" action=\"/Article/Show/";
-        // line 45
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "search", [], "any", false, false, false, 45), "html", null, true);
+        // line 51
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "search", [], "any", false, false, false, 51), "html", null, true);
         echo "\">
             <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Rechercher un article\" name=\"search\">
             <input type=\"submit\" class=\"btn btn-outline-success my-2 my-sm-0\" value=\"Rechercher\" name=\"searchSubmit\">
@@ -99,70 +105,73 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
 </nav>
 
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-    <a class=\"navbar-brand\" href=\"#\">Menu</a>
-    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-        <span class=\"navbar-toggler-icon\"></span>
-    </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-        <ul class=\"navbar-nav mr-auto\">
-            <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                    Admin
-                </a>
-                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/?controller=Article&action=ListAll\">Liste</a>
-                    <a class=\"dropdown-item\" href=\"/?controller=Article&action=Add\">Ajout</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
 
+
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        <a class=\"navbar-brand\" href=\"#\">Menu</a>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
+            aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+            <ul class=\"navbar-nav mr-auto\">
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\"
+                        data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Admin
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/?controller=Article&action=ListAll\">Liste</a>
+                        <a class=\"dropdown-item\" href=\"/?controller=Article&action=Add\">Ajout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
     ";
-        // line 75
+        // line 84
         $this->displayBlock('body', $context, $blocks);
-        // line 76
+        // line 85
         echo "
 
 
-<script src=\"https://code.jquery.com/jquery-3.4.0.min.js\"></script>
-<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
-<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
-<script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
-<script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
-<script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-";
-        // line 85
+    <script src=\"https://code.jquery.com/jquery-3.4.0.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+    ";
+        // line 94
         $this->displayBlock('javascript', $context, $blocks);
-        // line 86
+        // line 95
         echo "</body>
-</html>
-";
+
+</html>";
     }
 
-    // line 5
+    // line 6
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
         echo "CESI BLOG";
     }
 
-    // line 10
+    // line 12
     public function block_css($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 75
+    // line 84
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
     }
 
-    // line 85
+    // line 94
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -180,23 +189,26 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
     public function getDebugInfo()
     {
-        return array (  166 => 85,  160 => 75,  154 => 10,  147 => 5,  141 => 86,  139 => 85,  128 => 76,  126 => 75,  93 => 45,  57 => 11,  55 => 10,  47 => 5,  41 => 1,);
+        return array (  175 => 94,  169 => 84,  163 => 12,  156 => 6,  150 => 95,  148 => 94,  137 => 85,  135 => 84,  99 => 51,  59 => 13,  57 => 12,  48 => 6,  41 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!doctype html>
 <html lang=\"fr\">
+
 <head>
     <meta charset=\"utf-8\">
     <title>{% block title %}CESI BLOG{% endblock %}</title>
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
-    <link rel=\"stylesheet\" href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
+    <link rel=\"stylesheet\"
+        href=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\">
     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css\">
     {% block css %}{% endblock %}
 
 <body>
+
 
 <nav class=\"navbar sticky-top nav-pills navbar-expand-lg navbar-dark bg-dark\">
 
@@ -215,13 +227,16 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
                 <a class=\"nav-link\" href=\"/Logout\">Log Out</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/Article/ListAll\">Liste des articles</a>
+                <a class=\"nav-link\" href=\"/Article/ListAllArticle\">Liste des articles</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Article/Add\">Ajout d'un article</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/Contact\">Contact</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/User\">Utilisateurs</a>
             </li>
 
 
@@ -237,41 +252,44 @@ class __TwigTemplate_1916a3e299ba689f3bad0941cd13938df9ad386ca7a68567eeeeb612847
 
 </nav>
 
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-    <a class=\"navbar-brand\" href=\"#\">Menu</a>
-    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-        <span class=\"navbar-toggler-icon\"></span>
-    </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-        <ul class=\"navbar-nav mr-auto\">
-            <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                    Admin
-                </a>
-                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/?controller=Article&action=ListAll\">Liste</a>
-                    <a class=\"dropdown-item\" href=\"/?controller=Article&action=Add\">Ajout</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
 
+
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        <a class=\"navbar-brand\" href=\"#\">Menu</a>
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
+            aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+            <ul class=\"navbar-nav mr-auto\">
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\"
+                        data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Admin
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/?controller=Article&action=ListAll\">Liste</a>
+                        <a class=\"dropdown-item\" href=\"/?controller=Article&action=Add\">Ajout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
     {% block body %}{% endblock %}
 
 
 
-<script src=\"https://code.jquery.com/jquery-3.4.0.min.js\"></script>
-<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
-<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
-<script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
-<script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
-<script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
-{% block javascript %}{% endblock %}
+    <script src=\"https://code.jquery.com/jquery-3.4.0.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
+    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
+    <script src=\"https://code.jquery.com/ui/1.12.1/jquery-ui.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js\"></script>
+    {% block javascript %}{% endblock %}
 </body>
-</html>
-", "index.html.twig", "C:\\Projet\\Blog\\templates\\index.html.twig");
+
+</html>", "index.html.twig", "C:\\Projet\\Blog\\templates\\index.html.twig");
     }
 }

@@ -8,10 +8,10 @@ use DateTime;
 class ArticleController extends AbstractController {
 
     public function Index(){
-        return $this->ListAll();
+        return $this->ListAllArticle();
     }
 
-    public function ListAll(){
+    public function ListAllArticle(){
         $article = new Article();
         $listArticle = $article->SqlGetAll(Bdd::GetInstance());
 
@@ -167,15 +167,7 @@ class ArticleController extends AbstractController {
         ]);
     }
 
-    public function Show($articleID){
-        // affiche un article seul
-        $articleSQL = new Article();
-        $article = $articleSQL->SqlGet(BDD::getInstance(),$articleID);
 
-        return $this->twig->render('Article/view.html.twig',[
-            'article' => $article
-        ]);
-    }
 
     public function WriteOne($idArticle){
         $article = new Article();
@@ -212,6 +204,15 @@ class ArticleController extends AbstractController {
                 'articleList' => $listArticle
             ]
         );
+    }
+    public function Show($articleID){
+        // affiche un article seul
+        $articleSQL = new Article();
+        $article = $articleSQL->SqlGet(BDD::getInstance(),$articleID);
+
+        return $this->twig->render('Article/view.html.twig',[
+            'article' => $article
+        ]);
     }
 
     public function Val($articleID){
