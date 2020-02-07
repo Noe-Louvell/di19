@@ -33,31 +33,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="louvel_php: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="louvel_php: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="articles: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="louvel_php: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -208,9 +183,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1581082081178" />
-    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2" timestamp="1581077549182">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="390" y="27" width="1229" height="1001" key="CommitChangelistDialog2" timestamp="1581082161348">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="390" y="27" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1581082161348" />
     <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581077549182" />
     <state width="636" height="282" key="GridCell.Tab.0.bottom" timestamp="1581078400251">
       <screen x="0" y="0" width="1920" height="1040" />
