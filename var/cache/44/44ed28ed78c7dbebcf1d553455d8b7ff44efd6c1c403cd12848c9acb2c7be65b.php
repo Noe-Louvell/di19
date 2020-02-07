@@ -72,49 +72,50 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
                 <th scope=\"col\">Action</th>
             </tr>
             </thead>
+
             <tbody>
             ";
-        // line 22
+        // line 23
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["userList"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
-            // line 23
+            // line 24
             echo "                <tr>
                     <th scope=\"row\"><a href=\"/User/Show/";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 24), "html", null, true);
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "IdUti", [], "any", false, false, false, 25), "html", null, true);
             echo "\">#";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "IdUti", [], "any", false, false, false, 25), "html", null, true);
             echo "</a></th>
                     <td>";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_mail", [], "any", false, false, false, 25), "html", null, true);
-            echo "</td>
-                    <td>";
             // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_nom", [], "any", false, false, false, 26), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "utimail", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
                     <td>";
             // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_prenom", [], "any", false, false, false, 27), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "utinom", [], "any", false, false, false, 27), "html", null, true);
             echo "</td>
                     <td>";
             // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "uti_role", [], "any", false, false, false, 28), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "utiprenom", [], "any", false, false, false, 28), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 29
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "utirole", [], "any", false, false, false, 29), "html", null, true);
             echo "</td>
                     <td>
                         <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
                             <a class=\"btn btn-success\" href=\"/User/Show/";
-            // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 31), "html", null, true);
+            // line 32
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "IdUti", [], "any", false, false, false, 32), "html", null, true);
             echo "\"><i class=\"far fa-eye\"></i></a>
                             <a class=\"btn btn-warning\" href=\"/User/Update/";
-            // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 32), "html", null, true);
+            // line 33
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "IdUti", [], "any", false, false, false, 33), "html", null, true);
             echo "\"><i class=\"fas fa-edit\"></i></a>
                             <a class=\"btn btn-danger\" href=\"/User/Delete/";
-            // line 33
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "id_uti", [], "any", false, false, false, 33), "html", null, true);
+            // line 34
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["user"], "IdUti", [], "any", false, false, false, 34), "html", null, true);
             echo "\"><i class=\"far fa-trash-alt\"></i></a>
                         </div>
 
@@ -126,7 +127,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 41
         echo "
             </tbody>
         </table>
@@ -148,7 +149,7 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
 
     public function getDebugInfo()
     {
-        return array (  130 => 40,  117 => 33,  113 => 32,  109 => 31,  103 => 28,  99 => 27,  95 => 26,  91 => 25,  85 => 24,  82 => 23,  78 => 22,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
+        return array (  131 => 41,  118 => 34,  114 => 33,  110 => 32,  104 => 29,  100 => 28,  96 => 27,  92 => 26,  86 => 25,  83 => 24,  79 => 23,  59 => 5,  55 => 4,  47 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -173,19 +174,20 @@ class __TwigTemplate_abceda4a15d09d73f267d5683b1052f474d0f0112da46656b00864dd80e
                 <th scope=\"col\">Action</th>
             </tr>
             </thead>
+
             <tbody>
             {% for user in userList %}
                 <tr>
-                    <th scope=\"row\"><a href=\"/User/Show/{{ user.id_uti }}\">#{{ user.id_uti }}</a></th>
-                    <td>{{ user.uti_mail }}</td>
-                    <td>{{ user.uti_nom }}</td>
-                    <td>{{ user.uti_prenom }}</td>
-                    <td>{{ user.uti_role }}</td>
+                    <th scope=\"row\"><a href=\"/User/Show/{{ user.IdUti }}\">#{{ user.IdUti }}</a></th>
+                    <td>{{ user.utimail }}</td>
+                    <td>{{ user.utinom }}</td>
+                    <td>{{ user.utiprenom }}</td>
+                    <td>{{ user.utirole }}</td>
                     <td>
                         <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">
-                            <a class=\"btn btn-success\" href=\"/User/Show/{{ user.id_uti }}\"><i class=\"far fa-eye\"></i></a>
-                            <a class=\"btn btn-warning\" href=\"/User/Update/{{ user.id_uti }}\"><i class=\"fas fa-edit\"></i></a>
-                            <a class=\"btn btn-danger\" href=\"/User/Delete/{{ user.id_uti }}\"><i class=\"far fa-trash-alt\"></i></a>
+                            <a class=\"btn btn-success\" href=\"/User/Show/{{ user.IdUti }}\"><i class=\"far fa-eye\"></i></a>
+                            <a class=\"btn btn-warning\" href=\"/User/Update/{{ user.IdUti }}\"><i class=\"fas fa-edit\"></i></a>
+                            <a class=\"btn btn-danger\" href=\"/User/Delete/{{ user.IdUti }}\"><i class=\"far fa-trash-alt\"></i></a>
                         </div>
 
 

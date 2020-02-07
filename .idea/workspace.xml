@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfa3202-f336-4b11-a05f-ec55d7aaf6f4" name="Default Changelist" comment="zebi">
-      <change afterPath="$PROJECT_DIR$/.idea/tp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Article/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Article/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/User/ValidationUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/User/ValidationUser.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/User/userlist.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/User/userlist.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/0c/0cf3b90a47398afa91fa7b1910c86546e9a7951634cfb83ee283b4f7336a3d5d.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/0c/0cf3b90a47398afa91fa7b1910c86546e9a7951634cfb83ee283b4f7336a3d5d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/44/44ed28ed78c7dbebcf1d553455d8b7ff44efd6c1c403cd12848c9acb2c7be65b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/86/86fb73c391d5629e84140175ad72d18be5ed709574508f146650ed87fe986c37.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/86/86fb73c391d5629e84140175ad72d18be5ed709574508f146650ed87fe986c37.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/be/be51aa1c7754b1f04685c0c704fcd70204f67d73b1666c4af3cc73a51296f3cf.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/be/be51aa1c7754b1f04685c0c704fcd70204f67d73b1666c4af3cc73a51296f3cf.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/f2/f27cc2a10f55fd835e1d864d2fddde4f116854b3e18311109ef666951bf00f88.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f2/f27cc2a10f55fd835e1d864d2fddde4f116854b3e18311109ef666951bf00f88.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f6/f61f96949f4300d9ef9488c815173708b09955295714d3c484a0e1b656685d43.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/f8/f8ae3e7ca0656e90bdf7612a9e216b0a8a1fc9233a2d13929e21120a3ff89487.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +52,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="louvel_php: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="articles: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="louvel_php@mysql-louvel.alwaysdata.net" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="louvel_php: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="categorie: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -141,7 +119,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:louvel_php@mysql-louvel.alwaysdata.net" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@78746143" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@66bc6f9b" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -155,13 +133,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09199c2f-f864-4b5d-9948-01fb4a0e5918" name="Default Changelist" comment="" />
+      <changelist id="0cfa3202-f336-4b11-a05f-ec55d7aaf6f4" name="Default Changelist" comment="zebi" />
       <created>1580997793843</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580997793843</updated>
       <workItem from="1580997795174" duration="1564000" />
       <workItem from="1580999579836" duration="1939000" />
+      <workItem from="1581076974903" duration="325000" />
+      <workItem from="1581077313913" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="ghj">
       <created>1581000720945</created>
@@ -177,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581000886377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="zebi">
+      <created>1581067547980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581067547980</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Validator User">
+      <created>1581077550412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581077550412</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,21 +182,46 @@
     <MESSAGE value="Commit" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;.idea/php.xml&#10;#&#9;templates/index.html.twig&#10;#&#9;vendor/autoload.php&#10;#&#9;vendor/composer/autoload_real.php&#10;#&#9;vendor/composer/autoload_static.php" />
     <MESSAGE value="zebi" />
-    <option name="LAST_COMMIT_MESSAGE" value="zebi" />
+    <MESSAGE value="Validator User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validator User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Notifications" timestamp="1581001026835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1581001026835" />
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581065034515">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581077115534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581065034515" />
-    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2" timestamp="1581067414879">
+    <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581077115534" />
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581076917564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581067414879" />
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581076917564" />
+    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2" timestamp="1581077549182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="39" width="1229" height="1001" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581077549182" />
+    <state width="636" height="282" key="GridCell.Tab.0.bottom" timestamp="1581078400251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="636" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581078400251" />
+    <state width="636" height="282" key="GridCell.Tab.0.center" timestamp="1581078400251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="636" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581078400251" />
+    <state width="636" height="282" key="GridCell.Tab.0.left" timestamp="1581078400251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="636" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581078400251" />
+    <state width="636" height="282" key="GridCell.Tab.0.right" timestamp="1581078400251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="636" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581078400251" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1581067974505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1581067974505" />
     <state x="184" y="92" key="MergeDialog" timestamp="1581067506266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -215,10 +234,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580999851951" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581000940293">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581077552877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581000940293" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581077552877" />
+    <state x="669" y="171" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1581078169224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="171" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581078169224" />
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1581077314663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581077314663" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581067538258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
