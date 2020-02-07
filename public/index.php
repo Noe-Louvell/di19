@@ -34,7 +34,6 @@ $router->put('/Api/Article/:id/:json', "Api#ArticlePut#id#json");
 $router->get('/Article/ListAllArticle','Article#ListAllArticle');
 $router->get('/Api/Article/Last','Api#ArticleGetLast');
 
-
 $router->get('/coucou/di/:param1/:param2','Article#test#param1#param2');
 $router->get('/Contact', 'Contact#showForm');
 $router->post('/Contact/sendMail', 'Contact#sendMail');
@@ -46,11 +45,8 @@ $router->post('/Register','User#registerAdd');
 $router->get('/Article/Show/:id','Article#Show#id');
 $router->get('/Article/Search/:id','Article#Search#id');
 
-
 $router->get('/Article/Validation', 'Article#ListValidator');
 $router->get('/Article/Val/:id', 'Article#Val#id');
-$router->get('/Catergory/Val/:id', 'Category#Val#id');
-
 
 $router->get('/User/ValidationUser', 'User#ListValidatorUser');
 $router->get('/User/Val/:id_uti', 'User#Val#id_uti');
@@ -60,9 +56,3 @@ $router->get('/User/Show', "User#Show");
 $router->get('/Api/User', "Api#UserGet");
 
 echo $router->run();
-
-
-
-
-
-
